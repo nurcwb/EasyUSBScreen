@@ -1,0 +1,17 @@
+display:
+  DISPLAY_SIZE: 3.5"
+  DISPLAY_ORIENTATION: landscape
+static_images:
+  BACKGROUND:
+    PATH: background.png
+    X: 0
+    Y: 0
+    WIDTH: 480
+    HEIGHT: 320
+STATS:
+  CUSTOM:
+    INTERVAL: 2
+    CiclopeCombo: {}
+combo:
+  layout: ryzen-nvidia
+  show_hardware_models: true

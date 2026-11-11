@@ -1,0 +1,38 @@
+EasyUSBScreen portátil para Linux x86-64
+
+1. Extraia o arquivo .tar.gz em uma pasta de sua preferência.
+2. Na pasta EasyUSBScreen extraída, execute ./iniciar.sh.
+3. No primeiro uso, clique em Baixar e instalar para preparar a cópia
+   independente.
+
+Em Configurações → Turing, ative a inicialização antes do login ou desinstale
+a cópia independente. A inicialização automática requer systemd e pode pedir
+autorização para habilitar a execução dos serviços da sua conta antes do login.
+
+O aplicativo inclui o Java, o Turing e os temas compatíveis com 480 × 320. A instalação independente
+baixa o Python privado e as dependências. É preciso ter internet no primeiro
+uso e os comandos tar e gzip disponíveis no sistema. Os arquivos instalados ficam em
+~/.local/share/easyusbscreen/turing-standalone/.
+
+O pacote requer Linux x86-64 com glibc e uma sessão gráfica compatível com
+o aplicativo desktop. Para aplicar um tema, seu usuário precisa ter acesso
+à porta serial da tela USB. O pacote foi validado no Kubuntu.
+
+Temas novos incluídos no pacote são copiados para a instalação gerenciada
+ao clicar em Aplicar tema. Temas e fontes já existentes são preservados.
+
+Atalho no menu do KDE (sem administrador)
+
+1. Coloque a pasta EasyUSBScreen em um local definitivo, por exemplo
+   ~/Programas/EasyUSBScreen/.
+2. Abra um terminal nessa pasta e execute ./instalar-atalho.sh.
+3. Procure EasyUSBScreen no menu do KDE. O lançador EasyUSBScreen.desktop
+   na pasta também passará a usar o ícone do aplicativo. O Dolphin pode
+   solicitar confirmação para executar esse lançador pela primeira vez.
+
+iniciar.sh continua sendo o script de inicialização. Use o arquivo
+EasyUSBScreen.desktop como lançador visual com ícone após instalar o atalho.
+Se mover a pasta, execute instalar-atalho.sh novamente para corrigir os caminhos.
+Para remover apenas a entrada do menu, exclua
+~/.local/share/applications/br.com.infonur.easyusbscreen.desktop
+(ou o mesmo arquivo em $XDG_DATA_HOME/applications, se configurado).

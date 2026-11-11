@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=EasyUSBScreen
+Comment=Gerenciar a tela USB e os temas do Turing
+Exec=/bin/sh -c "exec \\"\\$(dirname -- \\"\\$1\\")/iniciar.sh\\"" sh %k
+Icon=utilities-system-monitor
+Terminal=false
+Categories=System;Monitor;
+StartupNotify=false

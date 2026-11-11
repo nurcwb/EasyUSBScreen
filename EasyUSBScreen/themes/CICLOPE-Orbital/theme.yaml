@@ -1,0 +1,189 @@
+display:
+  DISPLAY_SIZE: 3.5"
+  DISPLAY_ORIENTATION: landscape
+static_images:
+  BACKGROUND:
+    PATH: background.png
+    X: 0
+    Y: 0
+    WIDTH: 480
+    HEIGHT: 320
+STATS:
+  CPU:
+    TEMPERATURE:
+      INTERVAL: 3
+      TEXT:
+        SHOW: true
+        MIN_SIZE: 0
+        X: 23
+        Y: 78
+        WIDTH: 94
+        HEIGHT: 23
+        FONT: jetbrains-mono/JetBrainsMono-Bold.ttf
+        FONT_SIZE: 20
+        FONT_COLOR: 227, 245, 255
+        BACKGROUND_IMAGE: background.png
+        ALIGN: left
+        ANCHOR: lt
+  GPU:
+    INTERVAL: 3
+    TEMPERATURE:
+      TEXT:
+        SHOW: true
+        MIN_SIZE: 0
+        X: 359
+        Y: 208
+        WIDTH: 96
+        HEIGHT: 23
+        FONT: jetbrains-mono/JetBrainsMono-Bold.ttf
+        FONT_SIZE: 20
+        FONT_COLOR: 227, 245, 255
+        BACKGROUND_IMAGE: background.png
+        ALIGN: left
+        ANCHOR: lt
+    MEMORY_PERCENT:
+      GRAPH:
+        SHOW: true
+        X: 251
+        Y: 277
+        WIDTH: 205
+        HEIGHT: 4
+        MIN_VALUE: 0
+        MAX_VALUE: 100
+        BAR_OUTLINE: false
+        BAR_COLOR: 255, 141, 243
+        BACKGROUND_IMAGE: background.png
+  MEMORY:
+    INTERVAL: 3
+    VIRTUAL:
+      GRAPH:
+        SHOW: true
+        X: 23
+        Y: 277
+        WIDTH: 205
+        HEIGHT: 4
+        MIN_VALUE: 0
+        MAX_VALUE: 100
+        BAR_OUTLINE: false
+        BAR_COLOR: 105, 246, 255
+        BACKGROUND_IMAGE: background.png
+  DISK:
+    INTERVAL: 15
+    USED:
+      PERCENT_TEXT:
+        SHOW: true
+        MIN_SIZE: 0
+        X: 421
+        Y: 295
+        WIDTH: 41
+        HEIGHT: 16
+        FONT: jetbrains-mono/JetBrainsMono-Bold.ttf
+        FONT_SIZE: 13
+        FONT_COLOR: 227, 245, 255
+        BACKGROUND_IMAGE: background.png
+        ALIGN: left
+        ANCHOR: lt
+  NET:
+    INTERVAL: 2
+    ETH:
+      DOWNLOAD:
+        TEXT:
+          SHOW: true
+          MIN_SIZE: 0
+          X: 177
+          Y: 295
+          WIDTH: 77
+          HEIGHT: 16
+          FONT: jetbrains-mono/JetBrainsMono-Bold.ttf
+          FONT_SIZE: 12
+          FONT_COLOR: 105, 246, 255
+          BACKGROUND_IMAGE: background.png
+          ALIGN: center
+          ANCHOR: mm
+      UPLOAD:
+        TEXT:
+          SHOW: true
+          MIN_SIZE: 0
+          X: 277
+          Y: 295
+          WIDTH: 77
+          HEIGHT: 16
+          FONT: jetbrains-mono/JetBrainsMono-Bold.ttf
+          FONT_SIZE: 12
+          FONT_COLOR: 255, 141, 243
+          BACKGROUND_IMAGE: background.png
+          ALIGN: center
+          ANCHOR: mm
+  CUSTOM:
+    INTERVAL: 2
+    CiclopeOrbital: {}
+    CiclopeLocalIPv4:
+      TEXT:
+        SHOW: true
+        MIN_SIZE: 0
+        X: 38
+        Y: 295
+        WIDTH: 110
+        HEIGHT: 16
+        FONT: jetbrains-mono/JetBrainsMono-Bold.ttf
+        FONT_SIZE: 12
+        FONT_COLOR: 227, 245, 255
+        BACKGROUND_IMAGE: background.png
+        ALIGN: center
+        ANCHOR: mm
+    CiclopeSshUsers:
+      TEXT:
+        SHOW: true
+        MIN_SIZE: 0
+        X: 287
+        Y: 16
+        WIDTH: 176
+        HEIGHT: 16
+        FONT: jetbrains-mono/JetBrainsMono-Bold.ttf
+        FONT_SIZE: 12
+        FONT_COLOR: 105, 246, 255
+        BACKGROUND_IMAGE: background.png
+        ALIGN: center
+        ANCHOR: mm
+    CiclopeRamGB:
+      TEXT:
+        SHOW: true
+        MIN_SIZE: 0
+        X: 64
+        Y: 258
+        WIDTH: 175
+        HEIGHT: 17
+        FONT: jetbrains-mono/JetBrainsMono-Bold.ttf
+        FONT_SIZE: 14
+        FONT_COLOR: 227, 245, 255
+        BACKGROUND_IMAGE: background.png
+        ALIGN: left
+        ANCHOR: lt
+    CiclopeVramGB:
+      TEXT:
+        SHOW: true
+        MIN_SIZE: 0
+        X: 302
+        Y: 258
+        WIDTH: 158
+        HEIGHT: 17
+        FONT: jetbrains-mono/JetBrainsMono-Bold.ttf
+        FONT_SIZE: 14
+        FONT_COLOR: 227, 245, 255
+        BACKGROUND_IMAGE: background.png
+        ALIGN: left
+        ANCHOR: lt
+    CiclopeHardwareModels: {}
+hardware_models:
+- - 23
+  - 59
+  - 101
+  - 11
+  - '#69f6ff'
+  - lt
+- - 359
+  - 191
+  - 103
+  - 11
+  - '#ff8df3'
+  - lt

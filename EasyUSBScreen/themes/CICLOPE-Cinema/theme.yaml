@@ -1,0 +1,204 @@
+display:
+  DISPLAY_SIZE: 3.5"
+  DISPLAY_ORIENTATION: landscape
+static_images:
+  BACKGROUND:
+    PATH: background.png
+    X: 0
+    Y: 0
+    WIDTH: 480
+    HEIGHT: 320
+STATS:
+  CPU:
+    TEMPERATURE:
+      INTERVAL: 3
+      TEXT:
+        SHOW: true
+        MIN_SIZE: 0
+        X: 23
+        Y: 108
+        WIDTH: 90
+        HEIGHT: 25
+        FONT: jetbrains-mono/JetBrainsMono-Bold.ttf
+        FONT_SIZE: 22
+        FONT_COLOR: 244, 250, 255
+        BACKGROUND_IMAGE: background.png
+        ALIGN: left
+        ANCHOR: lt
+  GPU:
+    INTERVAL: 3
+    TEMPERATURE:
+      TEXT:
+        SHOW: true
+        MIN_SIZE: 0
+        X: 367
+        Y: 108
+        WIDTH: 91
+        HEIGHT: 25
+        FONT: jetbrains-mono/JetBrainsMono-Bold.ttf
+        FONT_SIZE: 22
+        FONT_COLOR: 244, 250, 255
+        BACKGROUND_IMAGE: background.png
+        ALIGN: right
+        ANCHOR: rt
+    MEMORY_PERCENT:
+      GRAPH:
+        SHOW: true
+        X: 362
+        Y: 218
+        WIDTH: 104
+        HEIGHT: 3
+        MIN_VALUE: 0
+        MAX_VALUE: 100
+        BAR_OUTLINE: false
+        BAR_COLOR: 255, 24, 138
+        BACKGROUND_IMAGE: background.png
+        REVERSE_DIRECTION: true
+  MEMORY:
+    INTERVAL: 3
+    VIRTUAL:
+      GRAPH:
+        SHOW: true
+        X: 14
+        Y: 218
+        WIDTH: 104
+        HEIGHT: 3
+        MIN_VALUE: 0
+        MAX_VALUE: 100
+        BAR_OUTLINE: false
+        BAR_COLOR: 0, 240, 255
+        BACKGROUND_IMAGE: background.png
+        REVERSE_DIRECTION: false
+  DISK:
+    INTERVAL: 15
+    USED:
+      PERCENT_TEXT:
+        SHOW: true
+        MIN_SIZE: 0
+        X: 67
+        Y: 295
+        WIDTH: 34
+        HEIGHT: 14
+        FONT: jetbrains-mono/JetBrainsMono-Bold.ttf
+        FONT_SIZE: 11
+        FONT_COLOR: 244, 250, 255
+        BACKGROUND_IMAGE: background.png
+        ALIGN: left
+        ANCHOR: lt
+      GRAPH:
+        SHOW: true
+        X: 102
+        Y: 300
+        WIDTH: 60
+        HEIGHT: 4
+        MIN_VALUE: 0
+        MAX_VALUE: 100
+        BAR_OUTLINE: false
+        BAR_COLOR: 0, 240, 255
+        BACKGROUND_IMAGE: background.png
+        REVERSE_DIRECTION: false
+  NET:
+    INTERVAL: 2
+    ETH:
+      DOWNLOAD:
+        TEXT:
+          SHOW: true
+          MIN_SIZE: 0
+          X: 330
+          Y: 294
+          WIDTH: 60
+          HEIGHT: 15
+          FONT: jetbrains-mono/JetBrainsMono-Bold.ttf
+          FONT_SIZE: 11
+          FONT_COLOR: 244, 250, 255
+          BACKGROUND_IMAGE: background.png
+          ALIGN: center
+          ANCHOR: mm
+      UPLOAD:
+        TEXT:
+          SHOW: true
+          MIN_SIZE: 0
+          X: 406
+          Y: 294
+          WIDTH: 60
+          HEIGHT: 15
+          FONT: jetbrains-mono/JetBrainsMono-Bold.ttf
+          FONT_SIZE: 11
+          FONT_COLOR: 244, 250, 255
+          BACKGROUND_IMAGE: background.png
+          ALIGN: center
+          ANCHOR: mm
+  CUSTOM:
+    INTERVAL: 2
+    CiclopeOrbitalCinema: {}
+    CiclopeLocalIPv4:
+      TEXT:
+        SHOW: true
+        MIN_SIZE: 0
+        X: 33
+        Y: 10
+        WIDTH: 147
+        HEIGHT: 16
+        FONT: jetbrains-mono/JetBrainsMono-Bold.ttf
+        FONT_SIZE: 12
+        FONT_COLOR: 244, 250, 255
+        BACKGROUND_IMAGE: background.png
+        ALIGN: center
+        ANCHOR: mm
+    CiclopeSshUsers:
+      TEXT:
+        SHOW: true
+        MIN_SIZE: 0
+        X: 299
+        Y: 10
+        WIDTH: 167
+        HEIGHT: 16
+        FONT: jetbrains-mono/JetBrainsMono-Bold.ttf
+        FONT_SIZE: 12
+        FONT_COLOR: 0, 240, 255
+        BACKGROUND_IMAGE: background.png
+        ALIGN: right
+        ANCHOR: rm
+    CiclopeRamGB:
+      TEXT:
+        SHOW: true
+        MIN_SIZE: 0
+        X: 14
+        Y: 196
+        WIDTH: 103
+        HEIGHT: 14
+        FONT: jetbrains-mono/JetBrainsMono-Bold.ttf
+        FONT_SIZE: 11
+        FONT_COLOR: 244, 250, 255
+        BACKGROUND_IMAGE: background.png
+        ALIGN: left
+        ANCHOR: lt
+    CiclopeVramGB:
+      TEXT:
+        SHOW: true
+        MIN_SIZE: 0
+        X: 363
+        Y: 196
+        WIDTH: 103
+        HEIGHT: 14
+        FONT: jetbrains-mono/JetBrainsMono-Bold.ttf
+        FONT_SIZE: 11
+        FONT_COLOR: 244, 250, 255
+        BACKGROUND_IMAGE: background.png
+        ALIGN: right
+        ANCHOR: rt
+    CiclopeHardwareModels: {}
+hardware_models:
+- - 14
+  - 81
+  - 116
+  - 11
+  - '#00f0ff'
+  - lt
+- - 350
+  - 81
+  - 117
+  - 11
+  - '#ff188a'
+  - rt
+author: "Antigravity / adapta\xE7\xE3o CICLOPE"
