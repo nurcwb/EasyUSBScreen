@@ -22,3 +22,7 @@ kotlin {
         }
     }
 }
+
+compose.resources {
+    packageOfResClass = "br.com.infonur.easyusbscreen.resources"
+}

@@ -27,10 +27,10 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.unit.dp
-import demo.shared.generated.resources.Res
-import demo.shared.generated.resources.network_other
-import demo.shared.generated.resources.network_wifi
-import demo.shared.generated.resources.network_wired
+import br.com.infonur.easyusbscreen.resources.Res
+import br.com.infonur.easyusbscreen.resources.network_other
+import br.com.infonur.easyusbscreen.resources.network_wifi
+import br.com.infonur.easyusbscreen.resources.network_wired
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.launch
 import org.jetbrains.compose.resources.painterResource

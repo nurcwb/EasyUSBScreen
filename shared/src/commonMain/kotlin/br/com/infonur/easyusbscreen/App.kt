@@ -49,14 +49,14 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.LayoutDirection
 import androidx.compose.ui.unit.sp
-import demo.shared.generated.resources.Res
-import demo.shared.generated.resources.hardware
-import demo.shared.generated.resources.network_wired
-import demo.shared.generated.resources.settings
-import demo.shared.generated.resources.theme_applied
-import demo.shared.generated.resources.theme_error
-import demo.shared.generated.resources.theme_selected
-import demo.shared.generated.resources.turing
+import br.com.infonur.easyusbscreen.resources.Res
+import br.com.infonur.easyusbscreen.resources.hardware
+import br.com.infonur.easyusbscreen.resources.network_wired
+import br.com.infonur.easyusbscreen.resources.settings
+import br.com.infonur.easyusbscreen.resources.theme_applied
+import br.com.infonur.easyusbscreen.resources.theme_error
+import br.com.infonur.easyusbscreen.resources.theme_selected
+import br.com.infonur.easyusbscreen.resources.turing
 import org.jetbrains.compose.resources.DrawableResource
 import org.jetbrains.compose.resources.painterResource
 

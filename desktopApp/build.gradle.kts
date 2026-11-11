@@ -19,7 +19,7 @@ val turingRuntime by tasks.registering(Zip::class) {
     archiveFileName.set("turing-runtime.zip")
     destinationDirectory.set(layout.buildDirectory.dir("turingRuntime"))
     from("src/turingRuntime")
-    from(rootProject.file("../themes")) { into("turing/res/themes") }
+    from(rootProject.file("themes")) { into("turing/res/themes") }
 }
 
 tasks.processResources { from(turingRuntime) }

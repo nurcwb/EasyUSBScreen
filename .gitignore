@@ -1,0 +1,58 @@
+# Gradle, Kotlin e arquivos gerados
+.gradle/
+.kotlin/
+**/build/
+out/
+
+# Configurações locais do IntelliJ
+.idea/
+*.iml
+local.properties
+
+# Instalação de desenvolvimento do Python Standalone e Turing
+/turing-standalone/
+
+# Backups e arquivos temporários de desenvolvimento
+/desktopApp/turingRuntime-backups/
+*.bak
+*.bak-*
+*.tmp
+*.log
+
+# Cache e ambientes locais do Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Arquivos locais de ferramentas e credenciais
+/.agents/
+/.codex/
+/.aws/
+.env
+.env.local
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Os temas e os recursos de src/turingRuntime/ devem ser versionados.
+# Não ignorar wheels, imagens, fontes ou o Gradle Wrapper por extensão.
+
+# Regras locais do projeto preservadas na reorganização
+.kotlin
+.gradle
+xcuserdata
+!src/**/build/
+.idea
+captures
+.externalNativeBuild
+.cxx
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcodeproj/project.xcworkspace/
+!*.xcworkspace/contents.xcworkspacedata
+**/xcshareddata/WorkspaceSettings.xcsettings
+node_modules/

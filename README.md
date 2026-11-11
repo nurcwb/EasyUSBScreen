@@ -121,7 +121,6 @@ Remover somente a interface não desinstala o Turing nem desativa seu serviço. 
 É necessário **JDK 21**. A partir da raiz deste repositório:
 
 ```bash
-cd demo
 ./gradlew :desktopApp:run
 ```
 
@@ -134,18 +133,29 @@ Para gerar o pacote portátil Linux:
 O arquivo será criado em:
 
 ```text
-demo/desktopApp/build/distributions/EasyUSBScreen-1.0.0-linux-x86_64.tar.gz
+desktopApp/build/distributions/EasyUSBScreen-1.0.0-linux-x86_64.tar.gz
 ```
 
 Estrutura principal:
 
 ```text
 EasyUSBScreen/
-├── demo/
-│   ├── desktopApp/    # Integração com Linux, instalação e gerenciamento
-│   └── shared/        # Interface Compose e componentes compartilhados
-└── themes/            # Pastas completas dos temas distribuídos
+├── desktopApp/       # Integração com Linux, instalação e gerenciamento
+├── shared/           # Interface Compose e componentes compartilhados
+├── gradle/           # Gradle Wrapper e catálogo de dependências
+├── gradlew           # Comandos do projeto no Linux
+├── settings.gradle.kts
+└── themes/           # Pastas completas dos temas distribuídos
 ```
+
+Para executar os testes da interface compartilhada:
+
+```bash
+./gradlew :shared:jvmTest
+```
+
+No IntelliJ, abra a pasta raiz `EasyUSBScreen/`, que contém `settings.gradle.kts`,
+e use o JDK 21 para o Gradle.
 
 ## Créditos
 
@@ -153,7 +163,7 @@ EasyUSBScreen/
 
 O EasyUSBScreen utiliza o [Turing Smart Screen Python](https://github.com/mathoudebine/turing-smart-screen-python), desenvolvido por **Matthieu Houdebine e colaboradores**, como motor de monitoramento, renderização e comunicação com as telas.
 
-O Turing é distribuído sob **GNU GPL v3**, conforme sua [licença](demo/desktopApp/src/turingRuntime/turing/LICENSE). Seus avisos de autoria e licença são mantidos no código empacotado. Alguns temas CICLOPE utilizam o mecanismo de fontes de dados personalizadas do Turing.
+O Turing é distribuído sob **GNU GPL v3**, conforme sua [licença](desktopApp/src/turingRuntime/turing/LICENSE). Seus avisos de autoria e licença são mantidos no código empacotado. Alguns temas CICLOPE utilizam o mecanismo de fontes de dados personalizadas do Turing.
 
 ### Temas, fontes e recursos gráficos
 
